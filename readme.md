@@ -15,7 +15,7 @@ previous and next paging
 ## Steps to execute this App:
 - Download the entire code 
 - Open up the index.html.
-- [View Live Site]()
+- [View Live Site](https://anthonys1760.github.io/Explore-Vidz-Search-App/)
 
 ## Technologies used: 
 - HTML

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ExploreVidz</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Add this css to be able to use Lightbox(fancybox) -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">  
+	
+	
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>Explore<span>Vidz</span></h1>
+			<p>Search all Youtube videos</p>
+		</header>
+		<section>
+			<br>
+			<form id="search-form" name="search-form" onsubmit="return search()">
+				<div class="fieldcontainer">
+					<input type="search" id="query" class="search-field" placeholder="Search Youtube...">
+					<input type="submit" name="search-btn" id="search-btn" value="">
+				</div>
+			</form>
+
+			<ul id="results"></ul>
+			<div id="buttons"></div>
+		</section>
+		<footer>
+			<br>
+			<p id="words">Explore Vidz created by Anthony Smith. Copyright &copy; 2020, All Rights Reserved</p>
+		</footer>
+		
+	</div>
+	<!-- Have to make sure to place jquery before js files -->
+	<!--<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>     this is new version jQuery-->
+
+	<!-- !!!!! Have to change jQuery to older version because Fancybox is not compatable with the new version; according to this link https://www.wysiwygwebbuilder.com/forum/viewtopic.php?t=80131  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<!-- Add this js to be able to use Lightbox(fancybox) -->
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+							
+	<script>
+									// We need to call the fancybox plugin
+
+			$(document).ready(function(){
+				// the .fancybox will call the fancybox plugin
+				$('.fancybox').fancybox();
+
+			});
+
+	</script>
+
+<!--	<script src="https://apis.google.com/js/api.js"></script>  // Adding this script to be able to like to the Youtube API -->
+
+</body>
+</html>
+
